@@ -1,0 +1,270 @@
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.formulario {
+  width: 85vw;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  display: flex;
+  width: 100%;
+  ;
+}
+
+body {
+  font-family: "inter";
+}
+
+.container {
+  display: flex;
+}
+
+.inputDinamico {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  display: flex;
+  font-size: 32px;
+  line-height: 150%;
+  color: #0d0d0d;
+  resize: none;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  box-sizing: border-box;
+  margin: 0;
+  flex-direction: column;
+}
+.outputDinamico {
+  overflow: hidden;
+  display: flex;
+  color: #0d0d0d;
+  resize: none;
+  border: 0;
+  box-shadow: 0 0 0 0;
+  outline: 0;
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 150%;
+  color: #495057;
+}
+.buttonCriptografar {
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+  height: 4.2rem;
+  width: 21rem;
+  border-radius: 3rem;
+
+  background: #000000;
+  color: #ffffff;
+  font-size: 16px;
+  border: 1.3px solid #0d0d0d;
+  box-shadow: 0px 13px 24px -8px rgba(0.2, 0.2, 0, 0.5);
+  transition: all 300ms ease;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+  gap: 24px;
+}
+
+.buttonCriptografar:hover {
+  background: #393939;
+
+  box-shadow: 0px 13px 24px -8px rgba(0.2, 0.2, 0, 0.5);
+}
+.buttonDescriptografar:hover {
+  background: #d991c0;
+
+  box-shadow: 0px 13px 24px -8px rgba(0.2, 0.2, 0, 0.5);
+}
+.buttonDescriptografar {
+  text-align: center;
+  margin: 0.5rem 0;
+  padding: 1.5rem;
+  height: 4.2rem;
+  width: 21rem;
+  border-radius: 3rem;
+  background: #f2c9e7;
+  color: #000000;
+  font-size: 16px;
+  border: 1.3px solid #000000;
+  box-shadow: 0px 13px 24px -8px rgba(0.2, 0.2, 0, 0.5);
+}
+
+.icon-Alert {
+  display: flex;
+  align-items: center;
+  padding-top: 1.3rem;
+  height: 18px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 150%;
+  color: #495057;
+  opacity: 0.8;
+}
+
+.resultado {
+  width: 80%;
+
+  align-items: center;
+  margin: 1.5rem;
+  padding: 2rem;
+  display: flex;
+  text-align: center;
+  background: #f3f5fc;
+  box-shadow: 0px 24px 32px -8px rgba(0.2, 0.2, 0, 0.5);
+  border-radius: 32px;
+  justify-content: center;
+  flex-direction: column;
+}
+.buttonCopiar {
+  transition: all 300ms ease;
+  padding: 1.5rem;
+  height: 4rem;
+  width: 20rem;
+  background: white;
+  color: #000000;
+  font-size: 16px;
+  border: 1px solid #0a710d;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+.buttonCopiar:hover {
+  background: #e8e8e8;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+@media screen and (max-width: 450px) {
+  .logo{
+    justify-content: center;
+    padding-top: 1rem;
+  }
+  .buttonCopiar {
+    width: 100%;
+  }
+  .formulario{
+    padding-top: 1rem;
+    height: 47vh;
+  }
+  .mulherOutput{
+    width: 45%;
+  }
+  .resultado {
+    height: 29vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .buttons {
+    flex-direction: column;
+    gap: 0px;
+  }
+  .inputDinamico{
+    text-align: center;
+  }
+  .outputDinamico{
+
+    text-align: center;
+    height: 29vh;
+
+  }
+    .mulherOutput{
+      width: 45%;
+    }
+  }
+
+@media screen and (min-width: 451px) and (max-width: 1023px) {
+  .logo{
+    width: 90%;
+  }
+  .formulario{
+    padding-top: 1rem;
+    height: 47vh;
+  }
+  .outputDinamico{
+    height: 100%;
+}
+.resultado {
+  height: 29vh;
+  align-items: center;
+  justify-content: center;
+}
+.formulario{
+  align-items: unset;
+}
+.mulherOutput{
+  width: 65%;
+  height: 70%;
+}
+}
+@media screen and (min-width: 1024px) {
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 45px;
+    margin: 0;
+    width: auto;
+
+  }
+  main {
+    flex-direction: row;
+  }
+
+  .formulario {
+    width: 55vw;
+    margin: 0 5rem;
+    height: 80vh;
+    align-items: flex-start;
+  }
+  .resultado {
+    margin: 0 2rem;
+    align-items: flex-end;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 80vh;
+    max-width: 20rem;
+  }
+  .areaInput{
+    height: 100%;
+    width: 100%;
+    text-align: left;
+  }
+  .formulario textarea  {
+    padding-top: 2rem;
+    padding-left: 2rem;
+    width: 100%;
+    height: 100%;
+    font-size: 2rem;
+    border: 0;
+    margin: 1.5rem;
+  }
+  .outputDinamico{
+    height: 100%;
+  }
+  .buttons {
+    justify-content: space-between;
+  }
+  
+}
