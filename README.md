@@ -1,5 +1,8 @@
 # Decodificador-de-Texto-Alura-Challenges-Oracle-ONE
 1° Desafio do Projeto ONE - Interface responsiva com a finalidade de encriptografar e descriptografar textos.
+
+
+
 Acesse em: https://pedrocavalcant3.github.io/Decodificador-de-Texto-Alura-Challenges-Oracle-ONE/
 
 
